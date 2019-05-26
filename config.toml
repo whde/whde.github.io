@@ -23,5 +23,3 @@ publishDir = "docs"
 #    primaryColor = "#00CD66"
 #    lightColor = "#FFA500"
    lightestColor = "#00CD66"
-
-theme = "m10c"
