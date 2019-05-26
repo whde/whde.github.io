@@ -3,6 +3,7 @@ languageCode = "en"
 title = "sss"
 theme = "m10c"
 weight = 1
+publishDir = "docs"
 
 [params]
   # Author
