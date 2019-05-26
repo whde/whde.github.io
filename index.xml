@@ -6,10 +6,190 @@
     <description>Recent content on sss</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Dec 2017 11:18:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 May 2019 11:13:49 +0800</lastBuildDate>
     
 	<atom:link href="https://whde.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Xcode模拟器卸载</title>
+      <link>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8D%B8%E8%BD%BD/</link>
+      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8D%B8%E8%BD%BD/</guid>
+      <description> Xcode模拟器卸载 卸载 模拟器存放在这个文件夹下
+/Library/Developer/CoreSimulator/Profiles/Runtimes/  如图：
+我们这次删除iOS8.1，直接在Finder（访达）将文件删除 然后重启Xcode，就可以看到效果了 </description>
+    </item>
+    
+    <item>
+      <title>Xcode模拟器安装包安装</title>
+      <link>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E5%8C%85%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E5%8C%85%E5%AE%89%E8%A3%85/</guid>
+      <description>Xcode模拟器安装包安装 安装（本文以Xcode10.1版本操作）
+首先我们先进入Xcode下载文件夹
+~/Library/Caches/com.apple.dt.Xcode # 右键-&amp;gt;显示包内容-&amp;gt;Downloads(如果没有Downloads目录, 则手动创建一个)  将我们下载好的模拟器安装包copy到这个Downloads目录，如图：
+然后我们回到Xcode操作
+点击下载对应的版本，这期间会跳过下载直接去安装
+不到一会就安装成功了，如图：</description>
+    </item>
+    
+    <item>
+      <title>创建一个类似CocoaPods的Spec</title>
+      <link>https://whde.github.io/posts/whdespecs/</link>
+      <pubDate>Sat, 25 May 2019 11:12:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/whdespecs/</guid>
+      <description> WhdeSpecs 创建一个类似CocoaPods的Spec Repo，然后将自己的组件放到上面，使用CocoaPods就可以帮我们集成这些组件, 本次将Specs放在Gitee上
+ ##### 创建自己的Specs  去Gitee上创建一个项目，命名为：WhdeSpecs
+cd ~/.cocoapods/repos  进入文件夹
+pod repo add WhdeSpecs https://gitee.com/Whde/WhdeSpecs.git  成功之后终端显示
+Cloning spec repo &#39;WhdeSpecs&#39; from &#39;https://gitee.com/Whde/WhdeSpecs.git&#39;   按照链接中如何创建发布自己的库介绍配置去配置项目和WhdeVersion.podspec 接下来就是如何提交到我们对应的地方，先进入组件文件夹，执行下面语句  pod repo push WhdeSpecs WhdeVersion.podspec git push origin :refs/tags/2.0.0   ##### 成功之后回到~/.cocoapods/repos文件夹，查看是否已经有   ##### 使用  source &#39;https://gitee.com/Whde/WhdeSpecs.git&#39; platform :ios, &#39;8.0&#39; inhibit_all_warnings! use_frameworks! target &#39;Demo&#39; do pod &#39;WhdeVersion&#39; end  </description>
+    </item>
+    
+    <item>
+      <title>获取iOS 设备的 UDID</title>
+      <link>https://whde.github.io/posts/udid/</link>
+      <pubDate>Sat, 25 May 2019 11:11:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/udid/</guid>
+      <description>iOS 设备的 UDID 什么是 UDID？ UDID 是由子母和数字组成的 40 个字符串的序号，用来区别每一个唯一的 iOS 设备，包括 iPhones, iPads, 以及 iPod Touches，这些编码看起来是随机的，实际上是跟硬件设备特点相联系的。
+如何获取 iOS 设备 UDID？
+在 iOS 设备上打开下面的地址，即可方便的获取到当前设备的 UDID。
+https://www.pgyer.com/udid
+注意：请根据网页的提示，安装蒲公英提供的描述文件。如果手机设置了锁屏密码，则需要根据提示输入锁屏密码。
+复制UDID，给开发工程师
+PS： ​ 这个过程安装了一个蒲公英的描述文件，在拿到UDID之后，我们可以在手机上删掉它，描述文件路径： ​ 设置-&amp;gt;通用-&amp;gt;描述文件-&amp;gt;蒲公英</description>
+    </item>
+    
+    <item>
+      <title>Mac Maven 安装</title>
+      <link>https://whde.github.io/posts/mac-maven-%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 25 May 2019 11:10:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/mac-maven-%E5%AE%89%E8%A3%85/</guid>
+      <description>Mac Maven 安装 下载地址：http://maven.apache.org/download.cgi
+选择这个版本下载：
+下载已经存放到Downloads文件夹，先进入Downloads文件夹
+cd Downloads  解压：
+tar -xvf apache-maven-3.5.4-bin.tar.gz  复制到对应文件下：
+sudo mv -f apache-maven-3..5.4 /usr/local/  编辑 /etc/profile 文件：
+cd ~ sudo vim /etc/profile  在/etc/profile文件末尾添加如下代码，然后保存文件
+export MAVEN_HOME=/usr/local/apache-maven-3.5.4 export PATH=${PATH}:${MAVEN_HOME}/bin  并运行如下命令使环境变量生效：
+source /etc/profile  查看是否生效，输入：
+mvn -v  显示如下信息，则说明 Maven 已经安装成功：
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-18T02:33:14+08:00) Maven home: /usr/local/apache-maven-3.5.4 Java version: 11.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home Default locale: zh_CN_#Hans, platform encoding: UTF-8 OS name: &amp;quot;mac os x&amp;quot;, version: &amp;quot;10.</description>
+    </item>
+    
+    <item>
+      <title>笑话服务端，配和JokeMysql使用</title>
+      <link>https://whde.github.io/posts/jokeserver/</link>
+      <pubDate>Sat, 25 May 2019 11:09:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/jokeserver/</guid>
+      <description>JokeServer 笑话服务端，配和JokeMysql使用
+github地址</description>
+    </item>
+    
+    <item>
+      <title>爬取笑话网站数据，存储到MySQL数据库</title>
+      <link>https://whde.github.io/posts/jokemysql/</link>
+      <pubDate>Sat, 25 May 2019 11:08:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/jokemysql/</guid>
+      <description>爬取笑话网站数据，存储到MySQL数据库 怎么爬取数据在Python爬取笑话数据中有详细说明
+本文基于这篇文章进行，将数据存储到MySQL
+首先要连接MySQL，需要引入 pymysql
+import pymysql  接着连接MySQL，并创建我们的table，db=joke需要事先创建好
+def connectdb(): db1 = pymysql.connect( host=&amp;quot;localhost&amp;quot;, user=&amp;quot;root&amp;quot;, passwd=&amp;quot;666666&amp;quot;, port=3306, db=&amp;quot;joke&amp;quot;) cursor = db1.cursor() cursor.execute(&amp;quot;DROP TABLE IF EXISTS joke&amp;quot;) sql = &amp;quot;&amp;quot;&amp;quot;CREATE TABLE joke (herf TEXT NOT NULL, title TEXT, date TEXT, detail TEXT)&amp;quot;&amp;quot;&amp;quot; try: cursor.execute(sql) cursor.execute(&amp;quot;&amp;quot;&amp;quot;SET SQL_SAFE_UPDATES = 0;&amp;quot;&amp;quot;&amp;quot;) pass except Exception as e: print(str(e)) pass return db1  接下来就是这么存到数据库中，我们存储连接(herf)，标题(title)，发布时间(date)，详情(detail)。如果存储失败，我们需要回滚操作
+def insetdb(db1, herf, title, date, detail): sql = &amp;quot;insert into joke(herf, title, date, detail) \ values (&#39;%s&#39;, &#39;%s&#39;, &#39;%s&#39;, &#39;%s&#39;);&amp;quot; % \ (herf, title, date, detail) try: cursor = db1.</description>
+    </item>
+    
+    <item>
+      <title>Python爬取笑话</title>
+      <link>https://whde.github.io/posts/joke/</link>
+      <pubDate>Sat, 25 May 2019 11:04:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/joke/</guid>
+      <description>Python爬取笑话 Python爬取笑话排行，将数据以json存储到文件中
+我们爬取的地址是：http://www.jokeji.cn/hot.asp?action=brow
+分析一下，我们需要爬取总页数，然后读取每页下面的笑话，笑话内容需要去详情页去爬取
+1、首先我们创建一个程序入口  我们创建一个文件夹，文件夹里最后存数据文件进去 spider(root_url) 方法开始爬取数据，这个方法我们自己实现  # 程序入口 if __name__ == &amp;quot;__main__&amp;quot;: # 创建文件夹，最后存数据到这个文件夹下面 importlib.reload(sys) if os.path.isdir(root_folder): pass else: os.mkdir(root_folder) # 开始爬取数据 spider(root_url) print(&#39;**** spider ****&#39;)  2、开始爬取数据spider(root_url)  先去getpages(url)获取页数pages，后面会讲到 page(pageurl)获取每页里面数据 数据爬完，存储到data.json文件中  # 开始爬取数据 def spider(url): list1 = [] i = 1 # 去获取排行榜的页数 pages = getpages(url) while i &amp;lt;= int(pages): # 拼接每一页的URL地址 pageurl = &#39;http://www.jokeji.cn/hot.asp?action=brow&amp;amp;me_page=&#39;+str(i) print(pageurl) # 获取每页下面的内容 list1 = list1+page(pageurl) i = i+1 pass else: print(&#39;大于页数&#39;) # 将list存储到data.</description>
+    </item>
+    
+    <item>
+      <title>Python爬取笑话的Android软件</title>
+      <link>https://whde.github.io/posts/jokeandroid/</link>
+      <pubDate>Sat, 25 May 2019 11:04:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/jokeandroid/</guid>
+      <description> JokeAndroid github地址
+对应的服务器
+使用了Okhttp网络模块
+fastjson解析
+implementation &#39;com.squareup.okhttp3:okhttp:3.11.0&#39; implementation group: &#39;com.alibaba&#39;, name: &#39;fastjson&#39;, version: &#39;1.2.51&#39;  JokeSwipeRefreshLayout实现了上下拉加载
+效果图如下：
+ </description>
+    </item>
+    
+    <item>
+      <title>iOS代码统计</title>
+      <link>https://whde.github.io/posts/ios%E4%BB%A3%E7%A0%81%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Sat, 25 May 2019 11:03:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/ios%E4%BB%A3%E7%A0%81%E7%BB%9F%E8%AE%A1/</guid>
+      <description> iOS代码统计（空行、注释、代码） 下载工具 工具cloc地址：https://github.com/AlDanial/cloc 先去下载Release下最新版本
+执行下面脚本： # 脚本解释： # /Users/Whde/Downloads/cloc-1.80/cloc 为下载的Cloc工具的路径 # /Users/Whde/Documents/Demo-IOS/trunk/Demo为项目的路径 perl /Users/Whde/Downloads/cloc-1.80/cloc /Users/Whde/Documents/Demo-IOS/trunk/Demo  得到结果如下： ➜ Demo perl /Users/Whde/Downloads/cloc-1.80/cloc /Users/Whde/Documents/Demo-IOS/trunk/Demo 1537 text files. 1507 unique files. 183 files ignored. github.com/AlDanial/cloc v 1.80 T=3.29 s (412.2 files/s, 41728.3 lines/s) ------------------------------------------------------------------------------- Language files blank comment code ------------------------------------------------------------------------------- Objective C 529 12616 8624 58317 C++ 62 2015 1287 13696 C/C++ Header 621 6308 15081 10894 JSON 111 0 0 2517 Markdown 14 682 0 2142 Objective C++ 3 148 28 787 Bourne Shell 8 172 286 769 C 2 46 19 561 HTML 1 8 0 62 D 2 0 0 9 JavaScript 1 0 5 2 ------------------------------------------------------------------------------- SUM: 1354 21995 25330 89756 -------------------------------------------------------------------------------  </description>
+    </item>
+    
+    <item>
+      <title>删除Mac自己装的Python</title>
+      <link>https://whde.github.io/posts/%E5%88%A0%E9%99%A4mac%E8%87%AA%E5%B7%B1%E8%A3%85%E7%9A%84python/</link>
+      <pubDate>Sat, 25 May 2019 11:01:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/%E5%88%A0%E9%99%A4mac%E8%87%AA%E5%B7%B1%E8%A3%85%E7%9A%84python/</guid>
+      <description>删除Mac自己装的Python，保留系统自带版本
+// 删除框架 sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.7 // 删除应用目录 sudo rm -rf &#39;/Applications/Python 3.7&#39; // 删除指向python的链接 cd /usr/local/bin/ ls -l /usr/local/bin | grep &#39;../Library/Frameworks/Python.framework/Versions/x.x&#39; | awk &#39;{print $9}&#39; | tr -d @ | xargs rm  </description>
+    </item>
+    
+    <item>
+      <title>Cocoapods安装发布自己库</title>
+      <link>https://whde.github.io/posts/cocoapods/</link>
+      <pubDate>Sat, 25 May 2019 10:59:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/cocoapods/</guid>
+      <description>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;
+Cocoapods安装 1.Mac终端输入 sudo gem install cocoapods  2.输入电脑密码即可开始安装,等待&amp;hellip;界面出现 3.继续终端输入 pod setup  等待界面出现 4.终端输入以下代码,查看版本号 --version  写自己的库 1.写完代码, 将自己的库上传到github,要生成一个Release版本 接下来就看怎么将这个Release版本弄到Cocoapods上.
+2.创建.podspec文件 终端cd到项目文件夹下 终端输入代码创建.podspec文件,代码中Language对应项目名
+pod spec create Language  用Xcode打开这个Language.podspec文件, 填写以下代码:
+Pod::Spec.new do |s| s.name = &amp;quot;Language&amp;quot; s.version = &amp;quot;1.0.4&amp;quot; s.summary = &amp;quot;iOS Language.&amp;quot; s.homepage = &amp;quot;https://github.com/whde/WhdeLocalized&amp;quot; s.license = &#39;MIT&#39; s.author = { &amp;quot;Whde&amp;quot; =&amp;gt; &amp;quot;460290973@qq.com&amp;quot; } s.platform = :ios, &amp;quot;7.0&amp;quot; s.source = { :git =&amp;gt; &amp;quot;https://github.com/whde/WhdeLocalized.git&amp;quot;, :tag =&amp;gt; s.</description>
+    </item>
+    
+    <item>
+      <title>获取Xcode模拟器下载地址</title>
+      <link>https://whde.github.io/posts/%E8%8E%B7%E5%8F%96xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</link>
+      <pubDate>Sat, 25 May 2019 10:43:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/%E8%8E%B7%E5%8F%96xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</guid>
+      <description> 获取Xcode模拟器下载地址 终端操作，期间需要输入电脑密码 sudo /Applications/Xcode.app/Contents/MacOS/Xcode  然后会自动打开Xcode，然后在Xcode里点击下载对应的模拟器，例如我下载iOS12（如图） 如上图那样，我们接着点击右边的x停止下载 接着我们回到终端，就会显示出模拟器的地址（如图） </description>
+    </item>
+    
+    <item>
+      <title>Mac Python 安装安装</title>
+      <link>https://whde.github.io/posts/python%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 25 May 2019 10:36:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/python%E5%AE%89%E8%A3%85/</guid>
+      <description> Mac安装Python 操作基于macOS Mojave(10.14.1)
+Mac自带有Python2.7版本, 我们安装3.7版本，两个版本可以共存，下载地址：
+https://www.python.org/downloads/release/python-371/  常规安装
+安装完成后会跳出安装好的程序路径
+安装位置在这
+/Library/Frameworks/Python.framework/Versions/3.7  也可以终端查看是否安装成功，终端输入Python3
+python3  </description>
+    </item>
     
     <item>
       <title>Package</title>

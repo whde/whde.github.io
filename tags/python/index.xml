@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on sss</title>
+    <link>https://whde.github.io/tags/python/</link>
+    <description>Recent content in Python on sss</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 May 2019 11:04:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://whde.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python爬取笑话</title>
+      <link>https://whde.github.io/posts/joke/</link>
+      <pubDate>Sat, 25 May 2019 11:04:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/joke/</guid>
+      <description>Python爬取笑话 Python爬取笑话排行，将数据以json存储到文件中
+我们爬取的地址是：http://www.jokeji.cn/hot.asp?action=brow
+分析一下，我们需要爬取总页数，然后读取每页下面的笑话，笑话内容需要去详情页去爬取
+1、首先我们创建一个程序入口  我们创建一个文件夹，文件夹里最后存数据文件进去 spider(root_url) 方法开始爬取数据，这个方法我们自己实现  # 程序入口 if __name__ == &amp;quot;__main__&amp;quot;: # 创建文件夹，最后存数据到这个文件夹下面 importlib.reload(sys) if os.path.isdir(root_folder): pass else: os.mkdir(root_folder) # 开始爬取数据 spider(root_url) print(&#39;**** spider ****&#39;)  2、开始爬取数据spider(root_url)  先去getpages(url)获取页数pages，后面会讲到 page(pageurl)获取每页里面数据 数据爬完，存储到data.json文件中  # 开始爬取数据 def spider(url): list1 = [] i = 1 # 去获取排行榜的页数 pages = getpages(url) while i &amp;lt;= int(pages): # 拼接每一页的URL地址 pageurl = &#39;http://www.jokeji.cn/hot.asp?action=brow&amp;amp;me_page=&#39;+str(i) print(pageurl) # 获取每页下面的内容 list1 = list1+page(pageurl) i = i+1 pass else: print(&#39;大于页数&#39;) # 将list存储到data.</description>
+    </item>
+    
+    <item>
+      <title>删除Mac自己装的Python</title>
+      <link>https://whde.github.io/posts/%E5%88%A0%E9%99%A4mac%E8%87%AA%E5%B7%B1%E8%A3%85%E7%9A%84python/</link>
+      <pubDate>Sat, 25 May 2019 11:01:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/%E5%88%A0%E9%99%A4mac%E8%87%AA%E5%B7%B1%E8%A3%85%E7%9A%84python/</guid>
+      <description>删除Mac自己装的Python，保留系统自带版本
+// 删除框架 sudo rm -rf /Library/Frameworks/Python.framework/Versions/3.7 // 删除应用目录 sudo rm -rf &#39;/Applications/Python 3.7&#39; // 删除指向python的链接 cd /usr/local/bin/ ls -l /usr/local/bin | grep &#39;../Library/Frameworks/Python.framework/Versions/x.x&#39; | awk &#39;{print $9}&#39; | tr -d @ | xargs rm  </description>
+    </item>
+    
+    <item>
+      <title>Mac Python 安装安装</title>
+      <link>https://whde.github.io/posts/python%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 25 May 2019 10:36:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/python%E5%AE%89%E8%A3%85/</guid>
+      <description> Mac安装Python 操作基于macOS Mojave(10.14.1)
+Mac自带有Python2.7版本, 我们安装3.7版本，两个版本可以共存，下载地址：
+https://www.python.org/downloads/release/python-371/  常规安装
+安装完成后会跳出安装好的程序路径
+安装位置在这
+/Library/Frameworks/Python.framework/Versions/3.7  也可以终端查看是否安装成功，终端输入Python3
+python3  </description>
+    </item>
+    
+  </channel>
+</rss>

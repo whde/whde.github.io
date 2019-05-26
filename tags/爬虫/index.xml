@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>爬虫 on sss</title>
+    <link>https://whde.github.io/tags/%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in 爬虫 on sss</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 May 2019 11:09:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://whde.github.io/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>笑话服务端，配和JokeMysql使用</title>
+      <link>https://whde.github.io/posts/jokeserver/</link>
+      <pubDate>Sat, 25 May 2019 11:09:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/jokeserver/</guid>
+      <description>JokeServer 笑话服务端，配和JokeMysql使用
+github地址</description>
+    </item>
+    
+    <item>
+      <title>爬取笑话网站数据，存储到MySQL数据库</title>
+      <link>https://whde.github.io/posts/jokemysql/</link>
+      <pubDate>Sat, 25 May 2019 11:08:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/jokemysql/</guid>
+      <description>爬取笑话网站数据，存储到MySQL数据库 怎么爬取数据在Python爬取笑话数据中有详细说明
+本文基于这篇文章进行，将数据存储到MySQL
+首先要连接MySQL，需要引入 pymysql
+import pymysql  接着连接MySQL，并创建我们的table，db=joke需要事先创建好
+def connectdb(): db1 = pymysql.connect( host=&amp;quot;localhost&amp;quot;, user=&amp;quot;root&amp;quot;, passwd=&amp;quot;666666&amp;quot;, port=3306, db=&amp;quot;joke&amp;quot;) cursor = db1.cursor() cursor.execute(&amp;quot;DROP TABLE IF EXISTS joke&amp;quot;) sql = &amp;quot;&amp;quot;&amp;quot;CREATE TABLE joke (herf TEXT NOT NULL, title TEXT, date TEXT, detail TEXT)&amp;quot;&amp;quot;&amp;quot; try: cursor.execute(sql) cursor.execute(&amp;quot;&amp;quot;&amp;quot;SET SQL_SAFE_UPDATES = 0;&amp;quot;&amp;quot;&amp;quot;) pass except Exception as e: print(str(e)) pass return db1  接下来就是这么存到数据库中，我们存储连接(herf)，标题(title)，发布时间(date)，详情(detail)。如果存储失败，我们需要回滚操作
+def insetdb(db1, herf, title, date, detail): sql = &amp;quot;insert into joke(herf, title, date, detail) \ values (&#39;%s&#39;, &#39;%s&#39;, &#39;%s&#39;, &#39;%s&#39;);&amp;quot; % \ (herf, title, date, detail) try: cursor = db1.</description>
+    </item>
+    
+    <item>
+      <title>Python爬取笑话</title>
+      <link>https://whde.github.io/posts/joke/</link>
+      <pubDate>Sat, 25 May 2019 11:04:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/joke/</guid>
+      <description>Python爬取笑话 Python爬取笑话排行，将数据以json存储到文件中
+我们爬取的地址是：http://www.jokeji.cn/hot.asp?action=brow
+分析一下，我们需要爬取总页数，然后读取每页下面的笑话，笑话内容需要去详情页去爬取
+1、首先我们创建一个程序入口  我们创建一个文件夹，文件夹里最后存数据文件进去 spider(root_url) 方法开始爬取数据，这个方法我们自己实现  # 程序入口 if __name__ == &amp;quot;__main__&amp;quot;: # 创建文件夹，最后存数据到这个文件夹下面 importlib.reload(sys) if os.path.isdir(root_folder): pass else: os.mkdir(root_folder) # 开始爬取数据 spider(root_url) print(&#39;**** spider ****&#39;)  2、开始爬取数据spider(root_url)  先去getpages(url)获取页数pages，后面会讲到 page(pageurl)获取每页里面数据 数据爬完，存储到data.json文件中  # 开始爬取数据 def spider(url): list1 = [] i = 1 # 去获取排行榜的页数 pages = getpages(url) while i &amp;lt;= int(pages): # 拼接每一页的URL地址 pageurl = &#39;http://www.jokeji.cn/hot.asp?action=brow&amp;amp;me_page=&#39;+str(i) print(pageurl) # 获取每页下面的内容 list1 = list1+page(pageurl) i = i+1 pass else: print(&#39;大于页数&#39;) # 将list存储到data.</description>
+    </item>
+    
+    <item>
+      <title>Python爬取笑话的Android软件</title>
+      <link>https://whde.github.io/posts/jokeandroid/</link>
+      <pubDate>Sat, 25 May 2019 11:04:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/jokeandroid/</guid>
+      <description> JokeAndroid github地址
+对应的服务器
+使用了Okhttp网络模块
+fastjson解析
+implementation &#39;com.squareup.okhttp3:okhttp:3.11.0&#39; implementation group: &#39;com.alibaba&#39;, name: &#39;fastjson&#39;, version: &#39;1.2.51&#39;  JokeSwipeRefreshLayout实现了上下拉加载
+效果图如下：
+ </description>
+    </item>
+    
+  </channel>
+</rss>

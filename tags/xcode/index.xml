@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xcode on sss</title>
+    <link>https://whde.github.io/tags/xcode/</link>
+    <description>Recent content in Xcode on sss</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 May 2019 11:13:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://whde.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Xcode模拟器卸载</title>
+      <link>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8D%B8%E8%BD%BD/</link>
+      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8D%B8%E8%BD%BD/</guid>
+      <description> Xcode模拟器卸载 卸载 模拟器存放在这个文件夹下
+/Library/Developer/CoreSimulator/Profiles/Runtimes/  如图：
+我们这次删除iOS8.1，直接在Finder（访达）将文件删除 然后重启Xcode，就可以看到效果了 </description>
+    </item>
+    
+    <item>
+      <title>Xcode模拟器安装包安装</title>
+      <link>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E5%8C%85%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E5%8C%85%E5%AE%89%E8%A3%85/</guid>
+      <description>Xcode模拟器安装包安装 安装（本文以Xcode10.1版本操作）
+首先我们先进入Xcode下载文件夹
+~/Library/Caches/com.apple.dt.Xcode # 右键-&amp;gt;显示包内容-&amp;gt;Downloads(如果没有Downloads目录, 则手动创建一个)  将我们下载好的模拟器安装包copy到这个Downloads目录，如图：
+然后我们回到Xcode操作
+点击下载对应的版本，这期间会跳过下载直接去安装
+不到一会就安装成功了，如图：</description>
+    </item>
+    
+    <item>
+      <title>创建一个类似CocoaPods的Spec</title>
+      <link>https://whde.github.io/posts/whdespecs/</link>
+      <pubDate>Sat, 25 May 2019 11:12:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/whdespecs/</guid>
+      <description> WhdeSpecs 创建一个类似CocoaPods的Spec Repo，然后将自己的组件放到上面，使用CocoaPods就可以帮我们集成这些组件, 本次将Specs放在Gitee上
+ ##### 创建自己的Specs  去Gitee上创建一个项目，命名为：WhdeSpecs
+cd ~/.cocoapods/repos  进入文件夹
+pod repo add WhdeSpecs https://gitee.com/Whde/WhdeSpecs.git  成功之后终端显示
+Cloning spec repo &#39;WhdeSpecs&#39; from &#39;https://gitee.com/Whde/WhdeSpecs.git&#39;   按照链接中如何创建发布自己的库介绍配置去配置项目和WhdeVersion.podspec 接下来就是如何提交到我们对应的地方，先进入组件文件夹，执行下面语句  pod repo push WhdeSpecs WhdeVersion.podspec git push origin :refs/tags/2.0.0   ##### 成功之后回到~/.cocoapods/repos文件夹，查看是否已经有   ##### 使用  source &#39;https://gitee.com/Whde/WhdeSpecs.git&#39; platform :ios, &#39;8.0&#39; inhibit_all_warnings! use_frameworks! target &#39;Demo&#39; do pod &#39;WhdeVersion&#39; end  </description>
+    </item>
+    
+    <item>
+      <title>iOS代码统计</title>
+      <link>https://whde.github.io/posts/ios%E4%BB%A3%E7%A0%81%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Sat, 25 May 2019 11:03:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/ios%E4%BB%A3%E7%A0%81%E7%BB%9F%E8%AE%A1/</guid>
+      <description> iOS代码统计（空行、注释、代码） 下载工具 工具cloc地址：https://github.com/AlDanial/cloc 先去下载Release下最新版本
+执行下面脚本： # 脚本解释： # /Users/Whde/Downloads/cloc-1.80/cloc 为下载的Cloc工具的路径 # /Users/Whde/Documents/Demo-IOS/trunk/Demo为项目的路径 perl /Users/Whde/Downloads/cloc-1.80/cloc /Users/Whde/Documents/Demo-IOS/trunk/Demo  得到结果如下： ➜ Demo perl /Users/Whde/Downloads/cloc-1.80/cloc /Users/Whde/Documents/Demo-IOS/trunk/Demo 1537 text files. 1507 unique files. 183 files ignored. github.com/AlDanial/cloc v 1.80 T=3.29 s (412.2 files/s, 41728.3 lines/s) ------------------------------------------------------------------------------- Language files blank comment code ------------------------------------------------------------------------------- Objective C 529 12616 8624 58317 C++ 62 2015 1287 13696 C/C++ Header 621 6308 15081 10894 JSON 111 0 0 2517 Markdown 14 682 0 2142 Objective C++ 3 148 28 787 Bourne Shell 8 172 286 769 C 2 46 19 561 HTML 1 8 0 62 D 2 0 0 9 JavaScript 1 0 5 2 ------------------------------------------------------------------------------- SUM: 1354 21995 25330 89756 -------------------------------------------------------------------------------  </description>
+    </item>
+    
+    <item>
+      <title>Cocoapods安装发布自己库</title>
+      <link>https://whde.github.io/posts/cocoapods/</link>
+      <pubDate>Sat, 25 May 2019 10:59:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/cocoapods/</guid>
+      <description>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;
+Cocoapods安装 1.Mac终端输入 sudo gem install cocoapods  2.输入电脑密码即可开始安装,等待&amp;hellip;界面出现 3.继续终端输入 pod setup  等待界面出现 4.终端输入以下代码,查看版本号 --version  写自己的库 1.写完代码, 将自己的库上传到github,要生成一个Release版本 接下来就看怎么将这个Release版本弄到Cocoapods上.
+2.创建.podspec文件 终端cd到项目文件夹下 终端输入代码创建.podspec文件,代码中Language对应项目名
+pod spec create Language  用Xcode打开这个Language.podspec文件, 填写以下代码:
+Pod::Spec.new do |s| s.name = &amp;quot;Language&amp;quot; s.version = &amp;quot;1.0.4&amp;quot; s.summary = &amp;quot;iOS Language.&amp;quot; s.homepage = &amp;quot;https://github.com/whde/WhdeLocalized&amp;quot; s.license = &#39;MIT&#39; s.author = { &amp;quot;Whde&amp;quot; =&amp;gt; &amp;quot;460290973@qq.com&amp;quot; } s.platform = :ios, &amp;quot;7.0&amp;quot; s.source = { :git =&amp;gt; &amp;quot;https://github.com/whde/WhdeLocalized.git&amp;quot;, :tag =&amp;gt; s.</description>
+    </item>
+    
+    <item>
+      <title>获取Xcode模拟器下载地址</title>
+      <link>https://whde.github.io/posts/%E8%8E%B7%E5%8F%96xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</link>
+      <pubDate>Sat, 25 May 2019 10:43:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/%E8%8E%B7%E5%8F%96xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</guid>
+      <description> 获取Xcode模拟器下载地址 终端操作，期间需要输入电脑密码 sudo /Applications/Xcode.app/Contents/MacOS/Xcode  然后会自动打开Xcode，然后在Xcode里点击下载对应的模拟器，例如我下载iOS12（如图） 如上图那样，我们接着点击右边的x停止下载 接着我们回到终端，就会显示出模拟器的地址（如图） </description>
+    </item>
+    
+  </channel>
+</rss>

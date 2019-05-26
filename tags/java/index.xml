@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on sss</title>
+    <link>https://whde.github.io/tags/java/</link>
+    <description>Recent content in Java on sss</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 May 2019 11:10:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://whde.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac Maven 安装</title>
+      <link>https://whde.github.io/posts/mac-maven-%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 25 May 2019 11:10:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/mac-maven-%E5%AE%89%E8%A3%85/</guid>
+      <description>Mac Maven 安装 下载地址：http://maven.apache.org/download.cgi
+选择这个版本下载：
+下载已经存放到Downloads文件夹，先进入Downloads文件夹
+cd Downloads  解压：
+tar -xvf apache-maven-3.5.4-bin.tar.gz  复制到对应文件下：
+sudo mv -f apache-maven-3..5.4 /usr/local/  编辑 /etc/profile 文件：
+cd ~ sudo vim /etc/profile  在/etc/profile文件末尾添加如下代码，然后保存文件
+export MAVEN_HOME=/usr/local/apache-maven-3.5.4 export PATH=${PATH}:${MAVEN_HOME}/bin  并运行如下命令使环境变量生效：
+source /etc/profile  查看是否生效，输入：
+mvn -v  显示如下信息，则说明 Maven 已经安装成功：
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-18T02:33:14+08:00) Maven home: /usr/local/apache-maven-3.5.4 Java version: 11.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home Default locale: zh_CN_#Hans, platform encoding: UTF-8 OS name: &amp;quot;mac os x&amp;quot;, version: &amp;quot;10.</description>
+    </item>
+    
+    <item>
+      <title>笑话服务端，配和JokeMysql使用</title>
+      <link>https://whde.github.io/posts/jokeserver/</link>
+      <pubDate>Sat, 25 May 2019 11:09:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/jokeserver/</guid>
+      <description>JokeServer 笑话服务端，配和JokeMysql使用
+github地址</description>
+    </item>
+    
+  </channel>
+</rss>

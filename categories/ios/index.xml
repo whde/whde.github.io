@@ -6,10 +6,63 @@
     <description>Recent content in iOS on sss</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Dec 2017 11:18:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 May 2019 11:13:49 +0800</lastBuildDate>
     
 	<atom:link href="https://whde.github.io/categories/ios/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Xcode模拟器卸载</title>
+      <link>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8D%B8%E8%BD%BD/</link>
+      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%8D%B8%E8%BD%BD/</guid>
+      <description> Xcode模拟器卸载 卸载 模拟器存放在这个文件夹下
+/Library/Developer/CoreSimulator/Profiles/Runtimes/  如图：
+我们这次删除iOS8.1，直接在Finder（访达）将文件删除 然后重启Xcode，就可以看到效果了 </description>
+    </item>
+    
+    <item>
+      <title>Xcode模拟器安装包安装</title>
+      <link>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E5%8C%85%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E5%8C%85%E5%AE%89%E8%A3%85/</guid>
+      <description>Xcode模拟器安装包安装 安装（本文以Xcode10.1版本操作）
+首先我们先进入Xcode下载文件夹
+~/Library/Caches/com.apple.dt.Xcode # 右键-&amp;gt;显示包内容-&amp;gt;Downloads(如果没有Downloads目录, 则手动创建一个)  将我们下载好的模拟器安装包copy到这个Downloads目录，如图：
+然后我们回到Xcode操作
+点击下载对应的版本，这期间会跳过下载直接去安装
+不到一会就安装成功了，如图：</description>
+    </item>
+    
+    <item>
+      <title>创建一个类似CocoaPods的Spec</title>
+      <link>https://whde.github.io/posts/whdespecs/</link>
+      <pubDate>Sat, 25 May 2019 11:12:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/whdespecs/</guid>
+      <description> WhdeSpecs 创建一个类似CocoaPods的Spec Repo，然后将自己的组件放到上面，使用CocoaPods就可以帮我们集成这些组件, 本次将Specs放在Gitee上
+ ##### 创建自己的Specs  去Gitee上创建一个项目，命名为：WhdeSpecs
+cd ~/.cocoapods/repos  进入文件夹
+pod repo add WhdeSpecs https://gitee.com/Whde/WhdeSpecs.git  成功之后终端显示
+Cloning spec repo &#39;WhdeSpecs&#39; from &#39;https://gitee.com/Whde/WhdeSpecs.git&#39;   按照链接中如何创建发布自己的库介绍配置去配置项目和WhdeVersion.podspec 接下来就是如何提交到我们对应的地方，先进入组件文件夹，执行下面语句  pod repo push WhdeSpecs WhdeVersion.podspec git push origin :refs/tags/2.0.0   ##### 成功之后回到~/.cocoapods/repos文件夹，查看是否已经有   ##### 使用  source &#39;https://gitee.com/Whde/WhdeSpecs.git&#39; platform :ios, &#39;8.0&#39; inhibit_all_warnings! use_frameworks! target &#39;Demo&#39; do pod &#39;WhdeVersion&#39; end  </description>
+    </item>
+    
+    <item>
+      <title>获取iOS 设备的 UDID</title>
+      <link>https://whde.github.io/posts/udid/</link>
+      <pubDate>Sat, 25 May 2019 11:11:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/udid/</guid>
+      <description>iOS 设备的 UDID 什么是 UDID？ UDID 是由子母和数字组成的 40 个字符串的序号，用来区别每一个唯一的 iOS 设备，包括 iPhones, iPads, 以及 iPod Touches，这些编码看起来是随机的，实际上是跟硬件设备特点相联系的。
+如何获取 iOS 设备 UDID？
+在 iOS 设备上打开下面的地址，即可方便的获取到当前设备的 UDID。
+https://www.pgyer.com/udid
+注意：请根据网页的提示，安装蒲公英提供的描述文件。如果手机设置了锁屏密码，则需要根据提示输入锁屏密码。
+复制UDID，给开发工程师
+PS： ​ 这个过程安装了一个蒲公英的描述文件，在拿到UDID之后，我们可以在手机上删掉它，描述文件路径： ​ 设置-&amp;gt;通用-&amp;gt;描述文件-&amp;gt;蒲公英</description>
+    </item>
     
     <item>
       <title>Package</title>
