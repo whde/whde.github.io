@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Push on Whde</title>
+    <link>https://whde.github.io/tags/push/</link>
+    <description>Recent content in Push on Whde</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 May 2019 10:13:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://whde.github.io/tags/push/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iOS消息推送测试</title>
+      <link>https://whde.github.io/posts/psuh/</link>
+      <pubDate>Mon, 27 May 2019 10:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/psuh/</guid>
+      <description> iOS消息推送测试 iOS消息推送测试，Mac App 操作界面，再也不用担心和后台那个坑调试了
+- Mac App - iOS推送测试 - 选择推送证书（下载下来的.cer文件） - 填写获取到手机的Device Token - 填写推送的内容 - 点击发送 </description>
+    </item>
+    
+  </channel>
+</rss>

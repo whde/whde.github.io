@@ -6,10 +6,89 @@
     <description>Recent content in iOS on Whde</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 May 2019 11:13:49 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 May 2019 16:13:49 +0800</lastBuildDate>
     
 	<atom:link href="https://whde.github.io/categories/ios/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TextAttachment图文AttributeString</title>
+      <link>https://whde.github.io/posts/textattachment/</link>
+      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/textattachment/</guid>
+      <description> TextAttachment 项目介绍 - (void)viewDidLoad { [super viewDidLoad]; NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init]; UIImage *image = [UIImage imageNamed:@&amp;quot;s.png&amp;quot;]; textAttachment.image = image; textAttachment.bounds = CGRectMake(0, 0, image.size.width/image.scale, image.size.height/image.scale); NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:@&amp;quot;梅西去了伊比萨高端夜店lio Ibiza。结果在夜店中，梅西偶遇纳达尔。按照TyC电视台的说法，梅西和纳达尔进行了“简单但友好”的对话，并且进行了合影。尽管纳达尔是皇马死忠球迷，但他和梅西仍然惺惺相惜。&amp;quot; attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:40]}]; [attri appendAttributedString:[NSAttributedString attributedStringWithAttachment:textAttachment]]; UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds]; label.numberOfLines = 0; label.attributedText = attri; [self.view addSubview:label]; }  </description>
+    </item>
+    
+    <item>
+      <title>断点下载Swift</title>
+      <link>https://whde.github.io/posts/resumefrombreakpoint/</link>
+      <pubDate>Mon, 27 May 2019 15:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/resumefrombreakpoint/</guid>
+      <description>ResumeFromBreakPoint Swift实现断点续传,Demo简单易懂,没有太多复杂模块和逻辑,完整体现断点续传的原理 https://github.com/whde/BreakPoint 为对应的Objective-C版本
+/*Objective-C*/ pod &#39;BreakPoint&#39;, &#39;~&amp;gt; 1.0.1&#39;  WhdeBreakPoint 简单的网络请求队列管理类,简单的管理,不做太多复杂处理
+/*创建请求,添加请求到数组中 WhdeSession请求失败,取消请求等需要从数组中移除*/ static func asynDownload(urlStr:NSString, progress:@escaping ProgressBlock, success:@escaping SuccessBlock, failure:@escaping FailureBlock) -&amp;gt;WhdeSession  /*取消请求,移除数组中对应的请求*/ static func cancel(urlStr:String)  /*暂停,即为取消请求*/ static func pause(urlStr:String)  WhdeFileManager 断点续传专用的文件管理
+/*根据NSURL获取存储的路径,文件不一定存在 文件名为Url base64转换*/ static func filePath(url:NSURL) -&amp;gt; String  /*获取对应文件的大小*/ static func fileSize(url:NSURL) -&amp;gt; UInt64  /*根据url删除对应的文件*/ static func deleteFile(url:NSURL) -&amp;gt;Bool  WhdeSession 网络收发
+/*创建请求,开始下载,设置已经下载的位置*/ func asynDownload(urlStr:NSString, progress:@escaping ProgressBlock, success:@escaping SuccessBlock, failure:@escaping FailureBlock, callCancel:@escaping CallCancel) -&amp;gt;WhdeSession  /*取消下载*/ func cancel() -&amp;gt; Void  /*暂停下载即为取消下载*/ func pause() -&amp;gt; Void  /*出现错误,取消请求,通知失败*/ internal func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?</description>
+    </item>
+    
+    <item>
+      <title>Lead VPN App for iOS</title>
+      <link>https://whde.github.io/posts/lead-ios/</link>
+      <pubDate>Mon, 27 May 2019 13:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/lead-ios/</guid>
+      <description>Lead   - a featherweight iOS proxy client with interactive UI.
+Lead is currently compatible with Shadowsocks.
+For more information, see the demo vedio URL.
+Todo List Other avaliable proxy types: HTTP HTTPS ShadowsocksR   Usage This project needs an Apple developer account and must be run on a physical device.
+ In Terminal,
+cd ~/your project path/ pod install carthage update --no-use-binaries --platform ios  In Xcode,</description>
+    </item>
+    
+    <item>
+      <title>WhdeAlert</title>
+      <link>https://whde.github.io/posts/alert/</link>
+      <pubDate>Mon, 27 May 2019 12:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/alert/</guid>
+      <description> Alert 消息提醒视图,在Xcode7 ，iOS9.0的SDK中，已经明确提示不再推荐使用UIAlertView，而只能使用UIAlertController; 而系统的样式不能够满足大多UI的需求,因此自定义一个类似UIAlertView; 使用: pod &#39;Alert&#39;, &#39;~&amp;gt; 1.0.4&#39;   5.导入头文件
+#import &amp;quot;Alert.h&amp;quot;   6.使用:  Alert *alert = [[Alert alloc] initWithTitle:CLocalizedString(@&amp;quot;输入口令&amp;quot;) message:nil delegate:nil cancelButtonTitle:CLocalizedString(@&amp;quot;取消&amp;quot;) otherButtonTitles:CLocalizedString(@&amp;quot;进入&amp;quot;), nil]; alert.alertStyle = AlertStylePlainTextInput; __block Alert*alertV = alert; [alert setClickBlock:^(Alert *alertView, NSInteger buttonIndex) { if (buttonIndex == 1) { NSLog(@&amp;quot;%@&amp;quot;, alertV.textField.text); } }]; [alert setCancelBlock:^(Alert *alertView) { // 取消 }]; [alert show];   </description>
+    </item>
+    
+    <item>
+      <title>iOS消息推送测试</title>
+      <link>https://whde.github.io/posts/psuh/</link>
+      <pubDate>Mon, 27 May 2019 10:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/psuh/</guid>
+      <description> iOS消息推送测试 iOS消息推送测试，Mac App 操作界面，再也不用担心和后台那个坑调试了
+- Mac App - iOS推送测试 - 选择推送证书（下载下来的.cer文件） - 填写获取到手机的Device Token - 填写推送的内容 - 点击发送 </description>
+    </item>
+    
+    <item>
+      <title>LameFramework 转Mp3</title>
+      <link>https://whde.github.io/posts/lame/</link>
+      <pubDate>Sun, 26 May 2019 14:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/lame/</guid>
+      <description>LameFrameworksh 最新的 iOS 端 Lame生成Framework. 音频转换, Mp3
+pod &amp;lsquo;WhdeLame&amp;rsquo;</description>
+    </item>
+    
+    <item>
+      <title>ResumeFromBreakPoint断点下载</title>
+      <link>https://whde.github.io/posts/breakpoint/</link>
+      <pubDate>Sun, 26 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/breakpoint/</guid>
+      <description>BreakPoint Objective-C实现断点续传,Demo简单易懂,没有太多复杂模块和逻辑,完整体现断点续传的原理 https://github.com/whde/ResumeFromBreakPoint 为对应的Swift断点续传
+WhdeBreakPoint 简单的网络请求队列管理类,简单的管理,不做太多复杂处理
+/*创建请求,添加请求到数组中 WhdeSession请求失败,取消请求等需要从数组中移除*/ + (WhdeSession *)asynDownloadWithUrl:(NSString *)urlStr progressBlock:(ProgressBlock)progress successBlock:(SuccessBlock) success failureBlock:(FailureBlock)failure;  /*取消请求,移除数组中对应的请求*/ + (void)cancel:(NSString *)urlStr;  /*暂停,即为取消请求*/ + (void)pause:(NSString *)urlStr;  WhdeFileManager 断点续传专用的文件管理
+/*根据NSURL获取存储的路径,文件不一定存在 文件名为Url base64转换*/ + (NSString *)filePath:(NSURL *)url;  /*获取对应文件的大小*/ + (long long)fileSize:(NSURL *)url;  /*根据url删除对应的文件*/ + (BOOL)deleteFile:(NSURL *)url;  WhdeSession 网络收发
+/*创建请求,开始下载,设置已经下载的位置*/ + (instancetype)asynDownloadWithUrl:(NSString *)urlStr progressBlock:(ProgressBlock)progress successBlock:(SuccessBlock) success failureBlock:(FailureBlock)failure callCancelBlock:(CallCancel)callCancel;  /*取消下载*/ - (void)cancel;  /*暂停下载即为取消下载*/ - (void)pause;  /*出现错误,取消请求,通知失败*/ - (void)URLSession:(NSURLSession *)session didBecomeInvalidWithError:(NSError *)error;  /*下载完成*/ - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error;  /*接收到数据,将数据存储*/ - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data { NSHTTPURLResponse *response = (NSHTTPURLResponse *)dataTask.</description>
+    </item>
     
     <item>
       <title>Xcode模拟器卸载</title>

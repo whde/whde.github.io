@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Whde</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 25 May 2019 11:13:49 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 May 2019 16:13:49 +0800</lastBuildDate>
     
 	<atom:link href="https://whde.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,16 +14,25 @@
     <item>
       <title>Mac</title>
       <link>https://whde.github.io/tags/mac/</link>
-      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/tags/mac/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>TextAttachment</title>
+      <link>https://whde.github.io/tags/textattachment/</link>
+      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/tags/textattachment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Xcode</title>
       <link>https://whde.github.io/tags/xcode/</link>
-      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/tags/xcode/</guid>
       <description></description>
@@ -32,9 +41,36 @@
     <item>
       <title>iOS</title>
       <link>https://whde.github.io/tags/ios/</link>
-      <pubDate>Sat, 25 May 2019 11:13:49 +0800</pubDate>
+      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>https://whde.github.io/tags/swift/</link>
+      <pubDate>Mon, 27 May 2019 15:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/tags/swift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VPN</title>
+      <link>https://whde.github.io/tags/vpn/</link>
+      <pubDate>Mon, 27 May 2019 13:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/tags/vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Push</title>
+      <link>https://whde.github.io/tags/push/</link>
+      <pubDate>Mon, 27 May 2019 10:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/tags/push/</guid>
       <description></description>
     </item>
     
