@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Cocoapods安装发布自己库 // sss</title>
+    <title>Cocoapods安装发布自己库 // Whde</title>
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.55.6" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="sss" />
+    <meta name="author" content="Whde" />
     <meta name="description" content="Cocoapods安装发布自己库" />
     <link rel="stylesheet" href="https://whde.github.io/css/main.min.280093df0016aa5a8a32bd0943f5856c3372e631ca932fbaf43a52fdc26ab07c.css" />
 
@@ -25,8 +25,8 @@
   </head>
   <body>
     <header class="app-header">
-      <a href="https://whde.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="sss" /></a>
-      <h1>sss</h1>
+      <a href="https://whde.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Whde" /></a>
+      <h1>Whde</h1>
       <p>Same Mistakes</p>
       <div class="app-header-social">
         
@@ -78,7 +78,8 @@
 
 <h5 id="2-输入电脑密码即可开始安装-等待-界面出现">2.输入电脑密码即可开始安装,等待&hellip;界面出现</h5>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/1623336-a8fd4a8315bf431b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='示例图片' referrerPolicy='no-referrer'/></p>
+<p>示例图片
+<img src="http://upload-images.jianshu.io/upload_images/1623336-a8fd4a8315bf431b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='示例图片' referrerPolicy='no-referrer' width=90% height=90%/></p>
 
 <h5 id="3-继续终端输入">3.继续终端输入</h5>
 
@@ -86,7 +87,8 @@
 </code></pre>
 
 <p>等待界面出现
-<img src="http://upload-images.jianshu.io/upload_images/1623336-b2c343af14d1fa05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='安装成功' referrerPolicy='no-referrer'/></p>
+安装成功
+<img src="http://upload-images.jianshu.io/upload_images/1623336-b2c343af14d1fa05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='安装成功' referrerPolicy='no-referrer' width=90% height=90%/></p>
 
 <h5 id="4-终端输入以下代码-查看版本号">4.终端输入以下代码,查看版本号</h5>
 
@@ -97,18 +99,26 @@
 
 <h5 id="1-写完代码-将自己的库上传到github-要生成一个release版本">1.写完代码, 将自己的库上传到github,要生成一个Release版本</h5>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/1623336-ad494032b26c9b31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进入Release仓库" />
-<img src="http://upload-images.jianshu.io/upload_images/1623336-6fd535b6a5b305a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建新Release版本" />
-<img src="http://upload-images.jianshu.io/upload_images/1623336-65ef7cdc47d7a438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="填写信息,发布Release版本" />
-<img src="http://upload-images.jianshu.io/upload_images/1623336-29e6ad8bd5aa8aa3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="版本信息" />
-接下来就看怎么将这个Release版本弄到Cocoapods上.</p>
+<p>进入Release仓库
+<img src="http://upload-images.jianshu.io/upload_images/1623336-ad494032b26c9b31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='进入Release仓库' referrerPolicy='no-referrer' width=90% height=90%/>
+创建新Release版本
+<img src="http://upload-images.jianshu.io/upload_images/1623336-6fd535b6a5b305a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='创建新Release版本' referrerPolicy='no-referrer' width=90% height=90%/>
+填写信息,发布Release版本
+<img src="http://upload-images.jianshu.io/upload_images/1623336-65ef7cdc47d7a438.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='填写信息,发布Release版本' referrerPolicy='no-referrer' width=90% height=90%/>
+版本信息
+<img src="http://upload-images.jianshu.io/upload_images/1623336-29e6ad8bd5aa8aa3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='版本信息' referrerPolicy='no-referrer' width=90% height=90%/></p>
+
+<p>接下来就看怎么将这个Release版本弄到Cocoapods上.</p>
 
 <h5 id="2-创建-podspec文件">2.创建.podspec文件</h5>
 
 <p>终端cd到项目文件夹下
-<img src="http://upload-images.jianshu.io/upload_images/1623336-a75c551ef8c2eef2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文件结构" />
-<img src="http://upload-images.jianshu.io/upload_images/1623336-85c2774a37da9435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="我的项目就cd到WhdeLocalized文件夹下" />
-终端输入代码创建.podspec文件,代码中Language对应项目名</p>
+文件结构
+<img src="http://upload-images.jianshu.io/upload_images/1623336-a75c551ef8c2eef2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='文件结构' referrerPolicy='no-referrer' width=90% height=90%/>
+我的项目就cd到WhdeLocalized文件夹下
+<img src="http://upload-images.jianshu.io/upload_images/1623336-85c2774a37da9435.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='我的项目就cd到WhdeLocalized文件夹下' referrerPolicy='no-referrer' width=90% height=90%/></p>
+
+<p>终端输入代码创建.podspec文件,代码中Language对应项目名</p>
 
 <pre><code class="language-objective-c">pod spec create Language
 </code></pre>
@@ -161,7 +171,8 @@ end
 
 <p>有什么问题, 会提示出来, 按照它的提示去修改, 不会改, 注意和给出的事例对比, 直到出现以下的结果</p>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/1623336-a7be54c5829f7fb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="这个结果表示.podspec文件没有问题" /></p>
+<p>这个结果表示.podspec文件没有问题
+<img src="http://upload-images.jianshu.io/upload_images/1623336-a7be54c5829f7fb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='这个结果表示.podspec文件没有问题' referrerPolicy='no-referrer' width=90% height=90%/></p>
 
 <h5 id="4-上传-podspec文件">4.上传.podspec文件</h5>
 
@@ -170,7 +181,8 @@ end
 <pre><code class="language-objective-c">pod trunk push Language.podspec
 </code></pre>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/1623336-58d44db01f8795f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="出现这个结果表示已经上传上去了" /></p>
+<p>出现这个结果表示已经上传上去了
+<img src="http://upload-images.jianshu.io/upload_images/1623336-58d44db01f8795f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='出现这个结果表示已经上传上去了' referrerPolicy='no-referrer' width=90% height=90%/></p>
 
 <h5 id="5-检查上传结果">5.检查上传结果</h5>
 
@@ -179,7 +191,8 @@ end
 <pre><code class="language-objective-c">pod search Language
 </code></pre>
 
-<p><img src="http://upload-images.jianshu.io/upload_images/1623336-fdf90cf2d71b63d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="上传结果及信息" /></p>
+<p>上传结果及信息
+<img src="http://upload-images.jianshu.io/upload_images/1623336-fdf90cf2d71b63d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"  alt='上传结果及信息' referrerPolicy='no-referrer' width=90% height=90%/></p>
 
 <h5 id="6-使用">6.使用</h5>
 

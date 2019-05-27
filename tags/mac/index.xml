@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mac on sss</title>
+    <title>Mac on Whde</title>
     <link>https://whde.github.io/tags/mac/</link>
-    <description>Recent content in Mac on sss</description>
+    <description>Recent content in Mac on Whde</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 25 May 2019 11:13:49 +0800</lastBuildDate>
@@ -146,10 +146,10 @@ implementation &#39;com.squareup.okhttp3:okhttp:3.11.0&#39; implementation group
       
       <guid>https://whde.github.io/posts/cocoapods/</guid>
       <description>这里不啰嗦Cocoapods有什么用,直接上如何使用,关于有什么用,相信各大搜索引擎比我解释更全面;
-Cocoapods安装 1.Mac终端输入 sudo gem install cocoapods  2.输入电脑密码即可开始安装,等待&amp;hellip;界面出现 3.继续终端输入 pod setup  等待界面出现 4.终端输入以下代码,查看版本号 --version  写自己的库 1.写完代码, 将自己的库上传到github,要生成一个Release版本 接下来就看怎么将这个Release版本弄到Cocoapods上.
-2.创建.podspec文件 终端cd到项目文件夹下 终端输入代码创建.podspec文件,代码中Language对应项目名
+Cocoapods安装 1.Mac终端输入 sudo gem install cocoapods  2.输入电脑密码即可开始安装,等待&amp;hellip;界面出现 示例图片 3.继续终端输入 pod setup  等待界面出现 安装成功 4.终端输入以下代码,查看版本号 --version  写自己的库 1.写完代码, 将自己的库上传到github,要生成一个Release版本 进入Release仓库 创建新Release版本 填写信息,发布Release版本 版本信息 接下来就看怎么将这个Release版本弄到Cocoapods上.
+2.创建.podspec文件 终端cd到项目文件夹下 文件结构 我的项目就cd到WhdeLocalized文件夹下 终端输入代码创建.podspec文件,代码中Language对应项目名
 pod spec create Language  用Xcode打开这个Language.podspec文件, 填写以下代码:
-Pod::Spec.new do |s| s.name = &amp;quot;Language&amp;quot; s.version = &amp;quot;1.0.4&amp;quot; s.summary = &amp;quot;iOS Language.&amp;quot; s.homepage = &amp;quot;https://github.com/whde/WhdeLocalized&amp;quot; s.license = &#39;MIT&#39; s.author = { &amp;quot;Whde&amp;quot; =&amp;gt; &amp;quot;460290973@qq.com&amp;quot; } s.platform = :ios, &amp;quot;7.0&amp;quot; s.source = { :git =&amp;gt; &amp;quot;https://github.com/whde/WhdeLocalized.git&amp;quot;, :tag =&amp;gt; s.</description>
+Pod::Spec.new do |s| s.name = &amp;quot;Language&amp;quot; s.version = &amp;quot;1.0.4&amp;quot; s.summary = &amp;quot;iOS Language.&amp;quot; s.homepage = &amp;quot;https://github.com/whde/WhdeLocalized&amp;quot; s.license = &#39;MIT&#39; s.author = { &amp;quot;Whde&amp;quot; =&amp;gt; &amp;quot;460290973@qq.com&amp;quot; } s.platform = :ios, &amp;quot;7.0&amp;quot; s.</description>
     </item>
     
     <item>
