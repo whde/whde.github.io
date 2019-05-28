@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Whde</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 May 2019 16:13:49 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2019 11:13:49 +0800</lastBuildDate>
     
 	<atom:link href="https://whde.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>Mac</title>
       <link>https://whde.github.io/tags/mac/</link>
-      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xcode</title>
+      <link>https://whde.github.io/tags/xcode/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/tags/xcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://whde.github.io/tags/ios/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Form</title>
+      <link>https://whde.github.io/tags/form/</link>
+      <pubDate>Mon, 27 May 2019 19:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/tags/form/</guid>
       <description></description>
     </item>
     
@@ -26,24 +53,6 @@
       <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/tags/textattachment/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xcode</title>
-      <link>https://whde.github.io/tags/xcode/</link>
-      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
-      
-      <guid>https://whde.github.io/tags/xcode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iOS</title>
-      <link>https://whde.github.io/tags/ios/</link>
-      <pubDate>Mon, 27 May 2019 16:13:49 +0800</pubDate>
-      
-      <guid>https://whde.github.io/tags/ios/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>WhdeLocalized for iOS Localized // Whde</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Whde" />
+    <meta name="description" content="针对国际化做的类,可以在应用程序中选择跟随系统,简体,繁体" />
+    <link rel="stylesheet" href="https://whde.github.io/css/main.min.280093df0016aa5a8a32bd0943f5856c3372e631ca932fbaf43a52fdc26ab07c.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WhdeLocalized for iOS Localized"/>
+<meta name="twitter:description" content="针对国际化做的类,可以在应用程序中选择跟随系统,简体,繁体"/>
+
+    <meta property="og:title" content="WhdeLocalized for iOS Localized" />
+<meta property="og:description" content="针对国际化做的类,可以在应用程序中选择跟随系统,简体,繁体" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://whde.github.io/posts/whdelocalized/" />
+<meta property="article:published_time" content="2019-05-28T11:13:49&#43;08:00"/>
+<meta property="article:modified_time" content="2019-05-28T11:13:49&#43;08:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://whde.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Whde" /></a>
+      <h1>Whde</h1>
+      <p>Same Mistakes</p>
+      <div class="app-header-social">
+        
+          <a target="_blank" href="https://github.com/Whde"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg></a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">WhdeLocalized for iOS Localized</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          May 28, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div><div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+</svg>
+          <a class="tag" href="https://whde.github.io/tags/ios/">iOS</a><a class="tag" href="https://whde.github.io/tags/xcode/">Xcode</a><a class="tag" href="https://whde.github.io/tags/mac/">Mac</a></div></div>
+    </header>
+    <div class="post-content">
+      
+
+<h2 id="whdelocalized">WhdeLocalized</h2>
+
+<ul>
+<li>针对国际化做的类,可以在应用程序中选择跟随系统,简体,繁体;</li>
+<li>本程序添加有English,简体,繁体,想要做更多国际化语言,可以自己添加更多;</li>
+</ul>
+
+<pre><code class="language-objective-c">pod 'Language', '~&gt; 1.0.4'
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/whde/WhdeLocalized/master/Language/Untitled.gif" alt="" /></p>
+
+<h2 id="文字国际化">文字国际化</h2>
+
+<ul>
+<li>1.生成 Localizable.strings, 添加对应的语言文件</li>
+
+<li><p>2.使用 CLocalizedString(@&ldquo;确认设置&rdquo;)
+例如:</p>
+
+<pre><code class="language-objective-c">titleLabel.text = CLocalizedString(@&quot;管理地址&quot;);
+</code></pre>
+
+<h2 id="xib国际化">xib国际化</h2>
+
+<p>xib使用的时候需要读取到对应语言文件夹下的nib,当我们设置语言不跟随系统的时候,系统不能正确读取; 因此,我们需要找到对应的nib
+- 1.对xib进行国际化,正常流程
+- 2.在使用xib的时候使用 CLocalizedNibName(@&ldquo;AddViewController&rdquo;)
+例如:</p>
+
+<pre><code class="language-objective-c">AddViewController *addVC = [[AddViewController alloc]
+                         initWithNibName:CLocalizedNibName(@&quot;AddViewController&quot;)
+                                  bundle:nil];
+</code></pre></li>
+</ul>
+
+<h2 id="图片国际化">图片国际化</h2>
+
+<p>和文字国际化类似,我们只需要找到国际化对应的是什么图片
+- 1.生成 ImageLocalized.strings, 添加对应的语言文件
+- 2.将图片添加到Project, 将ImageLocalized.strings中同一个Key在不同语言文件中对应到不同的语言图片
+- 3.使用CLocalizedImgName(图片名称Key)
+ 例如:</p>
+
+<pre><code class="language-objective-c"> [UIImage imageNamed:CLocalizedImgName(@&quot;djdzs_大家都在说.png&quot;)]
+</code></pre>
+
+<h2 id="设置语言">设置语言</h2>
+
+<ul>
+<li>1.将所有的ViewController继承于一个BaseViewController</li>
+
+<li><p>2.在viewDidLoad方法下添加:</p>
+
+<pre><code class="language-objective-c">[[NSNotificationCenter defaultCenter] removeObserver:self
+                                            name:LANGUAGE_CHANGE_NOTIFICATION
+                                          object:nil];
+[[NSNotificationCenter defaultCenter] addObserver:self
+                                     selector:@selector(languageHasChanged) 
+                                         name:LANGUAGE_CHANGE_NOTIFICATION
+                                       object:nil];
+</code></pre>
+
+<ul>
+<li>3.实现languageHasChanged方法:
+```objective-c</li>
+<li>(void)languageHasChanged{
+if ([self isViewLoaded] &amp;&amp; self.view.window == nil) {
+for (UIView *v in self.view.subviews) {
+    [v removeFromSuperview];
+}
+self.view = nil;
+}
+}
+```</li>
+</ul></li>
+
+<li><p>4.用以下方法设置语言:</p>
+
+<pre><code class="language-objective-c">[CLanguageUtil setCurrentLanguage:Language_Hant];
+</code></pre>
+
+<p>这个方法完成会发送消息通知:LANGUAGE_CHANGE_NOTIFICATION, 通知页面移除, 在页面显示在屏幕上的时候会重新调用viewDidLoad这个方法</p></li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

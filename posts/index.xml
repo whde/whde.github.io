@@ -6,10 +6,103 @@
     <description>Recent content in Posts on Whde</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 May 2019 16:13:49 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2019 11:13:49 +0800</lastBuildDate>
     
 	<atom:link href="https://whde.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CollectionView Animation</title>
+      <link>https://whde.github.io/posts/collectionviewanimation/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/collectionviewanimation/</guid>
+      <description> CollectionViewAnimation </description>
+    </item>
+    
+    <item>
+      <title>CollectionView Animation 1</title>
+      <link>https://whde.github.io/posts/collectionviewanimation1/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/collectionviewanimation1/</guid>
+      <description> CollectionViewAnimation1 </description>
+    </item>
+    
+    <item>
+      <title>CoreData 简单使用</title>
+      <link>https://whde.github.io/posts/coredata/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/coredata/</guid>
+      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询) - github:https://github.com/whde/CoreData</description>
+    </item>
+    
+    <item>
+      <title>Extension通知栏小工具</title>
+      <link>https://whde.github.io/posts/extension/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/extension/</guid>
+      <description>Extension 通知栏小工具,更方便切换到设置 - GitHub:https://github.com/whde/Extension</description>
+    </item>
+    
+    <item>
+      <title>WhdeLocalized for iOS Localized</title>
+      <link>https://whde.github.io/posts/whdelocalized/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/whdelocalized/</guid>
+      <description>WhdeLocalized  针对国际化做的类,可以在应用程序中选择跟随系统,简体,繁体; 本程序添加有English,简体,繁体,想要做更多国际化语言,可以自己添加更多;  pod &#39;Language&#39;, &#39;~&amp;gt; 1.0.4&#39;  文字国际化  1.生成 Localizable.strings, 添加对应的语言文件 2.使用 CLocalizedString(@&amp;ldquo;确认设置&amp;rdquo;) 例如:
+titleLabel.text = CLocalizedString(@&amp;quot;管理地址&amp;quot;);  xib国际化 xib使用的时候需要读取到对应语言文件夹下的nib,当我们设置语言不跟随系统的时候,系统不能正确读取; 因此,我们需要找到对应的nib - 1.对xib进行国际化,正常流程 - 2.在使用xib的时候使用 CLocalizedNibName(@&amp;ldquo;AddViewController&amp;rdquo;) 例如:
+AddViewController *addVC = [[AddViewController alloc] initWithNibName:CLocalizedNibName(@&amp;quot;AddViewController&amp;quot;) bundle:nil];   图片国际化 和文字国际化类似,我们只需要找到国际化对应的是什么图片 - 1.生成 ImageLocalized.strings, 添加对应的语言文件 - 2.将图片添加到Project, 将ImageLocalized.strings中同一个Key在不同语言文件中对应到不同的语言图片 - 3.使用CLocalizedImgName(图片名称Key) 例如:
+[UIImage imageNamed:CLocalizedImgName(@&amp;quot;djdzs_大家都在说.png&amp;quot;)]  设置语言  1.将所有的ViewController继承于一个BaseViewController 2.在viewDidLoad方法下添加:
+[[NSNotificationCenter defaultCenter] removeObserver:self name:LANGUAGE_CHANGE_NOTIFICATION object:nil]; [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageHasChanged) name:LANGUAGE_CHANGE_NOTIFICATION object:nil];   3.</description>
+    </item>
+    
+    <item>
+      <title>WhdeVersion iOS软件检查更新</title>
+      <link>https://whde.github.io/posts/version/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/version/</guid>
+      <description> Version 1.0.2 iOS软件检查更新,每次启动检测Appstore是否有更新,每一次更新只提醒一次 - 无需填写AppStoreID即可查询 - 一句话简单整合版本更新 - 添加了https://github.com/whde/Alert 的Framework, 无需改动即可使用Alert弹出框提示
+pod &#39;WhdeVersion&#39;, &#39;~&amp;gt; 1.0.2&#39;  使用:  将Version文件夹导入到项目中 导入头文件
+#import &amp;quot;VersionManage.h&amp;quot;   写入代码 objective-c [VersionManage checkVerSion];    #PS: AlertView推荐使用https://github.com/whde/Alert
+pod &#39;Alert&#39;, &#39;~&amp;gt; 1.0.3&#39;   这个Alert兼容iOS7以上 支持居左/居中/居右对齐 同时支持设置行间距 使用方式和UIAlertView一样 Alert同时还支持Block形式 支持横竖屏切换    </description>
+    </item>
+    
+    <item>
+      <title>WhdeViewPager, 类似安卓的ViewPager</title>
+      <link>https://whde.github.io/posts/whdeviewpager/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/whdeviewpager/</guid>
+      <description>WhdeViewPager 类似安卓的 ViewPager (Android ViewPager)，效果如下 使用 viewPager_ = [[WhdeViewPager alloc] initWithFrame:CGRectMake(0, 0, 320, 568)]; UIView *view1 = [[UIView alloc] init]; view1.backgroundColor = [UIColor lightGrayColor]; UIView *view2 = [[UIView alloc] init]; view2.backgroundColor = [UIColor whiteColor]; UIView *view3 = [[UIView alloc] init]; view3.backgroundColor = [UIColor yellowColor]; UIView *view4 = [[UIView alloc] init]; view4.backgroundColor = [UIColor grayColor]; UIView *view5 = [[UIView alloc] init]; view5.backgroundColor = [UIColor magentaColor]; [viewPager_ setItemsView:@[view1, view2, view3, view4, view5] withTitle:@[@&amp;quot;第一页面&amp;quot;, @&amp;quot;第二页面&amp;quot;, @&amp;quot;第三页面&amp;quot;, @&amp;quot;第四页面&amp;quot;, @&amp;quot;第五页面&amp;quot;]]; [self.</description>
+    </item>
+    
+    <item>
+      <title>根据系统API, 封装二维码扫描(QRCode)</title>
+      <link>https://whde.github.io/posts/qrcode/</link>
+      <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/qrcode/</guid>
+      <description>QRCode 根据系统API, 封装二维码扫描
+ 1.link AVFoundation.framework
+ 2.#import 
+ 3.拷贝以下代码 ```objective-c /*!
+ 扫一扫 */  (void)intoQRCodeVC { NSString *mediaType = AVMediaTypeVideo; AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType]; if(authStatus == AVAuthorizationStatusDenied){ if (IS_VAILABLE_IOS8) { UIAlertController *alert = [UIAlertController alertControllerWithTitle:@&amp;ldquo;相机权限受限&amp;rdquo; message:@&amp;ldquo;请在iPhone的\&amp;ldquo;设置-&amp;gt;隐私-&amp;gt;相机\&amp;ldquo;选项中,允许\&amp;ldquo;自游邦\&amp;ldquo;访问您的相机.&amp;rdquo; preferredStyle:UIAlertControllerStyleAlert]; [alert addAction:[UIAlertAction actionWithTitle:@&amp;ldquo;好&amp;rdquo; style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) { }]]; [alert addAction:[UIAlertAction actionWithTitle:@&amp;ldquo;去设置&amp;rdquo; style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) { if ([self canOpenSystemSettingView]) { [self systemSettingView]; } }]]; [self presentViewController:alert animated:YES completion:nil]; } else { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@&amp;ldquo;相机权限受限&amp;rdquo; message:@&amp;ldquo;请在iPhone的\&amp;ldquo;设置-&amp;gt;隐私-&amp;gt;相机\&amp;ldquo;选项中,允许\&amp;ldquo;自游邦\&amp;ldquo;访问您的相机.</description>
+    </item>
+    
+    <item>
+      <title>iOS 表格 WhdeForm</title>
+      <link>https://whde.github.io/posts/form/</link>
+      <pubDate>Mon, 27 May 2019 19:13:49 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/form/</guid>
+      <description>WhdeForm iOS 表格
+pod &#39;WhdeForm&#39;, &#39;~&amp;gt; 1.0.0&#39;   添加了Reusable机制 添加了横（Section）表头 添加了竖（Column）表头 添加了左上角（TopLeftHeader）总表头 通过FDateSource去创建各个元素，类似TableView 添加了FIndexPath,{section, column} 表头添加点击事件 添加了网格   使用 #import &amp;quot;ViewController.h&amp;quot; #import &amp;quot;FormScrollView.h&amp;quot; @interface ViewController ()&amp;lt;FDelegate, FDataSource&amp;gt; { NSArray *_data; } @end @implementation ViewController - (void)viewDidLoad { [super viewDidLoad]; self.edgesForExtendedLayout = UIRectEdgeNone; self.view.autoresizingMask = UIViewAutoresizingNone; FormScrollView *table = [[FormScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-64)]; table.contentInset = UIEdgeInsetsMake(0, 0, 0, 0); table.fDelegate = self; table.fDataSource = self; [self.view addSubview:table]; _data = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@&amp;quot;datas&amp;quot; ofType:@&amp;quot;plist&amp;quot;]]; [table reloadData]; } - (FTopLeftHeaderView *)topLeftHeadViewForForm:(FormScrollView *)formScrollView { FTopLeftHeaderView *view = [formScrollView dequeueReusableTopLeftView]; if (view == NULL) { view = [[FTopLeftHeaderView alloc] initWithSectionTitle:@&amp;quot;行数&amp;quot; columnTitle:@&amp;quot;列数&amp;quot;]; } return view; } - (NSInteger)numberOfSection:(FormScrollView *)formScrollView { return _data.</description>
+    </item>
     
     <item>
       <title>TextAttachment图文AttributeString</title>
