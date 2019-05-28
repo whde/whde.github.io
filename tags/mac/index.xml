@@ -35,7 +35,11 @@
       <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/posts/coredata/</guid>
-      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询) - github:https://github.com/whde/CoreData</description>
+      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询)
+github:https://github.com/whde/CoreData
+创建工程,记得勾选使用CoreData
+创建Entity
+创建属性</description>
     </item>
     
     <item>
@@ -346,6 +350,15 @@ https://www.python.org/downloads/release/python-371/  常规安装
 安装位置在这
 /Library/Frameworks/Python.framework/Versions/3.7  也可以终端查看是否安装成功，终端输入Python3
 python3  </description>
+    </item>
+    
+    <item>
+      <title>ProgressView,波浪进度</title>
+      <link>https://whde.github.io/posts/progressview/</link>
+      <pubDate>Thu, 14 Dec 2017 11:18:15 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/progressview/</guid>
+      <description> ProgressView </description>
     </item>
     
   </channel>

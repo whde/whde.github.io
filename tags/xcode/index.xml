@@ -35,7 +35,11 @@
       <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/posts/coredata/</guid>
-      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询) - github:https://github.com/whde/CoreData</description>
+      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询)
+github:https://github.com/whde/CoreData
+创建工程,记得勾选使用CoreData
+创建Entity
+创建属性</description>
     </item>
     
     <item>
@@ -251,6 +255,15 @@ Pod::Spec.new do |s| s.name = &amp;quot;Language&amp;quot; s.version = &amp;quot
       
       <guid>https://whde.github.io/posts/%E8%8E%B7%E5%8F%96xcode%E6%A8%A1%E6%8B%9F%E5%99%A8%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80/</guid>
       <description> 获取Xcode模拟器下载地址 终端操作，期间需要输入电脑密码 sudo /Applications/Xcode.app/Contents/MacOS/Xcode  然后会自动打开Xcode，然后在Xcode里点击下载对应的模拟器，例如我下载iOS12（如图） 如上图那样，我们接着点击右边的x停止下载 接着我们回到终端，就会显示出模拟器的地址（如图） </description>
+    </item>
+    
+    <item>
+      <title>ProgressView,波浪进度</title>
+      <link>https://whde.github.io/posts/progressview/</link>
+      <pubDate>Thu, 14 Dec 2017 11:18:15 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/progressview/</guid>
+      <description> ProgressView </description>
     </item>
     
   </channel>

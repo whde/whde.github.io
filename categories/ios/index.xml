@@ -35,7 +35,11 @@
       <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/posts/coredata/</guid>
-      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询) - github:https://github.com/whde/CoreData</description>
+      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询)
+github:https://github.com/whde/CoreData
+创建工程,记得勾选使用CoreData
+创建Entity
+创建属性</description>
     </item>
     
     <item>
@@ -237,15 +241,28 @@ PS： ​ 这个过程安装了一个蒲公英的描述文件，在拿到UDID之
     </item>
     
     <item>
-      <title>Package</title>
+      <title>ProgressView,波浪进度</title>
+      <link>https://whde.github.io/posts/progressview/</link>
+      <pubDate>Thu, 14 Dec 2017 11:18:15 +0800</pubDate>
+      
+      <guid>https://whde.github.io/posts/progressview/</guid>
+      <description> ProgressView </description>
+    </item>
+    
+    <item>
+      <title>iOS脚本打包</title>
       <link>https://whde.github.io/posts/package/</link>
       <pubDate>Thu, 14 Dec 2017 11:18:15 +0800</pubDate>
       
       <guid>https://whde.github.io/posts/package/</guid>
-      <description>iOS脚本打包 使用方法 1 : 项目主目录下创建 Package 文件夹, 将Package_test.sh DevelopmentExportOptionsPlist.plist放进文件下 2 : 打开Package_test.sh文件,修改 &amp;ldquo;项目自定义部分&amp;rdquo; 配置好项目参数 3 : 打开DevelopmentExportOptionsPlist.plist, 配置provisioningProfiles字段 4 : 打开终端, cd到Package文件夹 5 : 输入 sh Package_test.sh 命令,回车,开始执行此打包脚本
-DevelopmentExportOptionsPlist.plist 文件下载地址：
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;compileBitcode&amp;lt;/key&amp;gt; &amp;lt;false/&amp;gt; &amp;lt;key&amp;gt;method&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;development&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;provisioningProfiles&amp;lt;/key&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;com.Whde.WhdeProjectName&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;Wildcard&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;key&amp;gt;signingCertificate&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;iPhone Developer&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;signingStyle&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;manual&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;stripSwiftSymbols&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;teamID&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;BVU65MZFLK&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;thinning&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;&amp;amp;lt;none&amp;amp;gt;&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;  Package_test.sh 文件下载地址：
-# !</description>
+      <description>iOS脚本打包 使用方法  项目主目录下创建 Package 文件夹, 将Package_test.sh DevelopmentExportOptionsPlist.plist放进文件下
+ 打开Package_test.sh文件,修改 &amp;ldquo;项目自定义部分&amp;rdquo; 配置好项目参数
+ 打开DevelopmentExportOptionsPlist.plist, 配置provisioningProfiles字段
+ 打开终端, cd到Package文件夹
+ 输入 sh Package_test.sh 命令,回车,开始执行此打包脚本
+  DevelopmentExportOptionsPlist.plist 文件下载地址：DevelopmentExportOptionsPlist.plist
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE plist PUBLIC &amp;quot;-//Apple//DTD PLIST 1.0//EN&amp;quot; &amp;quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&amp;quot;&amp;gt; &amp;lt;plist version=&amp;quot;1.0&amp;quot;&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;compileBitcode&amp;lt;/key&amp;gt; &amp;lt;false/&amp;gt; &amp;lt;key&amp;gt;method&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;development&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;provisioningProfiles&amp;lt;/key&amp;gt; &amp;lt;dict&amp;gt; &amp;lt;key&amp;gt;com.Whde.WhdeProjectName&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;Wildcard&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;key&amp;gt;signingCertificate&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;iPhone Developer&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;signingStyle&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;manual&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;stripSwiftSymbols&amp;lt;/key&amp;gt; &amp;lt;true/&amp;gt; &amp;lt;key&amp;gt;teamID&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;BVU65MZFLK&amp;lt;/string&amp;gt; &amp;lt;key&amp;gt;thinning&amp;lt;/key&amp;gt; &amp;lt;string&amp;gt;&amp;amp;lt;none&amp;amp;gt;&amp;lt;/string&amp;gt; &amp;lt;/dict&amp;gt; &amp;lt;/plist&amp;gt;  Package_test.sh 文件下载地址：Package_test.sh
+# !/bin/bash # 使用方法: # 1 : 项目主目录下创建 Package 文件夹, 将Package_test.</description>
     </item>
     
   </channel>

@@ -35,7 +35,11 @@
       <pubDate>Tue, 28 May 2019 11:13:49 +0800</pubDate>
       
       <guid>https://whde.github.io/posts/coredata/</guid>
-      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询) - github:https://github.com/whde/CoreData</description>
+      <description>CoreData 地址邮编, 用CoreData实现插入/删除/查询(包含结果排序,模糊查询)
+github:https://github.com/whde/CoreData
+创建工程,记得勾选使用CoreData
+创建Entity
+创建属性</description>
     </item>
     
     <item>
